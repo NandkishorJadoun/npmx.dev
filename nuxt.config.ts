@@ -201,6 +201,8 @@ export default defineNuxtConfig({
   ogImage: {
     defaults: {
       component: 'Default',
+      width: 1200,
+      height: 630,
     },
   },
 

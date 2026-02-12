@@ -1,6 +1,6 @@
 export default defineNitroPlugin(nitroApp => {
   nitroApp.hooks.hook('render:html', (html, { event }) => {
-    if (event.path === '/spa.prerender-fallback.html') {
+    if (event.path === '/spa.prerender-fallback.html' || event.path === '/200.html') {
       html.head.push(`
         <noscript>
           <style>
